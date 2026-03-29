@@ -1,0 +1,22 @@
+{
+  "vendors": [
+    {
+      "id": "V001",
+      "legal_name": "Acme Technologies Pvt Ltd",
+      "tin": "72-1234567",
+      "status": "active"
+    },
+    {
+      "id": "V002",
+      "legal_name": "GlobalServ Solutions Inc",
+      "tin": "45-9876543",
+      "status": "active"
+    },
+    {
+      "id": "V003",
+      "legal_name": "Meridian Enterprises LLC",
+      "tin": "88-4521367",
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+MASTER VENDOR SERVICES AGREEMENT
+
+Parties:
+Party A (Client): Meridian Enterprises LLC
+Party B (Vendor): GlobalServ Solutions Inc
+
+Effective Date: 2025-02-01
+Term Length: 24 months
+Governing Law: State of Delaware
+
+Scope of Services:
+Vendor shall provide cloud infrastructure management,
+24/7 support services, and quarterly security audits.
+
+Payment Terms: Net-30 from invoice date
+
+Termination Clause: Either party may terminate with 30 days
+written notice. Immediate termination permitted in case of
+material breach.
+
+Liability Cap: [TO BE NEGOTIATED]
+
+Confidentiality: Both parties agree to maintain confidentiality
+of proprietary information for 3 years post-termination.
+
+Signatures:
+Client: _______________  Date: 2025-02-01
+Vendor: _______________  Date: 2025-02-01

@@ -1,0 +1,20 @@
+FORM W-9
+Request for Taxpayer Identification Number
+
+Legal Name: Global Services Solutions Inc
+Business Name (if different): GlobalServ
+Entity Type: Corporation
+TIN: 45-9876543
+TIN Type: EIN
+
+Address: 4500 Tech Park Drive
+City: Austin
+State: TX
+Zip: 78701
+
+Certification:
+Under penalties of perjury, I certify that the information
+provided is correct.
+
+Signature: Mark T. Henderson
+Date: 2025-01-20

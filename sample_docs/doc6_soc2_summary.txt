@@ -1,0 +1,25 @@
+SOC 2 TYPE II AUDIT REPORT — EXECUTIVE SUMMARY
+
+Organization: GlobalServ Solutions Inc
+Audit Period: 2024-01-01 to 2024-12-31
+Auditor: Deloitte & Touche LLP
+
+Trust Service Criteria Covered:
+- Security (CC series)
+- Availability (A series)
+- Confidentiality (C series)
+
+Opinion Type: Qualified Opinion
+
+Exceptions Noted:
+1. Access control reviews were not performed quarterly
+   as required — observed gap in Q2 2024.
+2. Incident response documentation was incomplete
+   for 3 of 12 sampled incidents.
+
+Management Response:
+Management acknowledges the findings and has implemented
+corrective action plans for both exceptions as of Q1 2025.
+
+Overall Assessment: Controls are suitably designed but
+operating effectiveness had exceptions during the audit period.

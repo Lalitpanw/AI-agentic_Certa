@@ -1,0 +1,619 @@
+{
+  "master_summary": {
+    "run_timestamp": "2026-03-29T22:46:15.582270",
+    "total_documents": 7,
+    "auto_approved": 0,
+    "flagged_for_human_review": 7,
+    "high_risk_documents": [
+      "doc1_coi_normal.txt",
+      "doc2_coi_expired.txt",
+      "doc4_w9_name_mismatch.txt"
+    ],
+    "summary_by_doc": [
+      {
+        "file": "doc1_coi_normal.txt",
+        "type": "certificate_of_insurance",
+        "decision": "HUMAN_REVIEW",
+        "flags": {
+          "high": 1,
+          "medium": 9,
+          "low": 0
+        }
+      },
+      {
+        "file": "doc2_coi_expired.txt",
+        "type": "certificate_of_insurance",
+        "decision": "HUMAN_REVIEW",
+        "flags": {
+          "high": 2,
+          "medium": 8,
+          "low": 0
+        }
+      },
+      {
+        "file": "doc3_contract_missing_clause.txt",
+        "type": "vendor_contract",
+        "decision": "HUMAN_REVIEW",
+        "flags": {
+          "high": 0,
+          "medium": 8,
+          "low": 0
+        }
+      },
+      {
+        "file": "doc4_w9_name_mismatch.txt",
+        "type": "w9_tax_form",
+        "decision": "HUMAN_REVIEW",
+        "flags": {
+          "high": 1,
+          "medium": 8,
+          "low": 0
+        }
+      },
+      {
+        "file": "doc5_nda_normal.txt",
+        "type": "nda",
+        "decision": "HUMAN_REVIEW",
+        "flags": {
+          "high": 0,
+          "medium": 6,
+          "low": 0
+        }
+      },
+      {
+        "file": "doc6_soc2_summary.txt",
+        "type": "soc2_report",
+        "decision": "HUMAN_REVIEW",
+        "flags": {
+          "high": 0,
+          "medium": 7,
+          "low": 0
+        }
+      },
+      {
+        "file": "doc7_ambiguous.txt",
+        "type": "vendor_contract",
+        "decision": "HUMAN_REVIEW",
+        "flags": {
+          "high": 0,
+          "medium": 8,
+          "low": 0
+        }
+      }
+    ]
+  },
+  "document_reports": [
+    {
+      "filename": "doc1_coi_normal.txt",
+      "doc_type": "certificate_of_insurance",
+      "classification_confidence": "high",
+      "extracted_fields": {
+        "error": "Extraction failed \u2014 malformed response"
+      },
+      "risk_flags": [
+        {
+          "field": "insured_name",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "insurer_name",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "policy_number",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "coverage_type",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "coverage_amount",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "effective_date",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "expiry_date",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "certificate_holder",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "Extraction Process",
+          "issue": "Extraction failed due to malformed response",
+          "severity": "High",
+          "recommendation": "Manually review the certificate of insurance document to extract relevant data and verify its accuracy",
+          "type": "ai"
+        },
+        {
+          "field": "Document Content",
+          "issue": "Potential for missing or incomplete information due to extraction failure",
+          "severity": "Medium",
+          "recommendation": "Verify that all necessary information, such as policy numbers, coverage limits, and effective dates, are present and correct in the document",
+          "type": "ai"
+        }
+      ],
+      "flag_count": {
+        "high": 1,
+        "medium": 9,
+        "low": 0
+      },
+      "routing_decision": "HUMAN_REVIEW",
+      "routing_queue": "compliance_team",
+      "routing_reason": "1 high-severity flag(s) require review"
+    },
+    {
+      "filename": "doc2_coi_expired.txt",
+      "doc_type": "certificate_of_insurance",
+      "classification_confidence": "high",
+      "extracted_fields": {
+        "error": "Extraction failed \u2014 malformed response"
+      },
+      "risk_flags": [
+        {
+          "field": "insured_name",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "insurer_name",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "policy_number",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "coverage_type",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "coverage_amount",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "effective_date",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "expiry_date",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "certificate_holder",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "Extraction Process",
+          "issue": "Extraction failed due to malformed response",
+          "severity": "High",
+          "recommendation": "Manually review the certificate of insurance document to ensure all required information is present and accurate, and consider re-running the extraction process or using an alternative method to validate the data.",
+          "type": "ai"
+        },
+        {
+          "field": "Data Integrity",
+          "issue": "Potential data loss or inaccuracy due to extraction failure",
+          "severity": "High",
+          "recommendation": "Verify the authenticity and completeness of the certificate of insurance through alternative means, such as contacting the vendor directly, to mitigate potential risks.",
+          "type": "ai"
+        }
+      ],
+      "flag_count": {
+        "high": 2,
+        "medium": 8,
+        "low": 0
+      },
+      "routing_decision": "HUMAN_REVIEW",
+      "routing_queue": "compliance_team",
+      "routing_reason": "2 high-severity flag(s) require review"
+    },
+    {
+      "filename": "doc3_contract_missing_clause.txt",
+      "doc_type": "vendor_contract",
+      "classification_confidence": "high",
+      "extracted_fields": {
+        "error": "Extraction failed \u2014 malformed response"
+      },
+      "risk_flags": [
+        {
+          "field": "party_a",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "party_b",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "effective_date",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "term_length",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "governing_law",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "liability_cap",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "termination_clause",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "payment_terms",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        }
+      ],
+      "flag_count": {
+        "high": 0,
+        "medium": 8,
+        "low": 0
+      },
+      "routing_decision": "HUMAN_REVIEW",
+      "routing_queue": "vendor_ops_team",
+      "routing_reason": "8 medium-severity flag(s) need attention"
+    },
+    {
+      "filename": "doc4_w9_name_mismatch.txt",
+      "doc_type": "w9_tax_form",
+      "classification_confidence": "high",
+      "extracted_fields": {
+        "error": "Extraction failed \u2014 malformed response"
+      },
+      "risk_flags": [
+        {
+          "field": "legal_name",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "business_name",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "entity_type",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "tin",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "tin_type",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "address",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "signature_date",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "Extraction response",
+          "issue": "Malformed response indicating potential data corruption or extraction failure",
+          "severity": "High",
+          "recommendation": "Manually review the w9_tax_form document to ensure data accuracy and completeness, and re-extract the data if necessary",
+          "type": "ai"
+        },
+        {
+          "field": "Error handling",
+          "issue": "Lack of clear error details or debugging information",
+          "severity": "Medium",
+          "recommendation": "Investigate the extraction process to determine the cause of the malformed response and consider implementing additional error handling or logging mechanisms",
+          "type": "ai"
+        }
+      ],
+      "flag_count": {
+        "high": 1,
+        "medium": 8,
+        "low": 0
+      },
+      "routing_decision": "HUMAN_REVIEW",
+      "routing_queue": "compliance_team",
+      "routing_reason": "1 high-severity flag(s) require review"
+    },
+    {
+      "filename": "doc5_nda_normal.txt",
+      "doc_type": "nda",
+      "classification_confidence": "high",
+      "extracted_fields": {
+        "error": "Extraction failed \u2014 malformed response"
+      },
+      "risk_flags": [
+        {
+          "field": "disclosing_party",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "receiving_party",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "effective_date",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "confidentiality_period",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "governing_law",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "scope",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        }
+      ],
+      "flag_count": {
+        "high": 0,
+        "medium": 6,
+        "low": 0
+      },
+      "routing_decision": "HUMAN_REVIEW",
+      "routing_queue": "vendor_ops_team",
+      "routing_reason": "6 medium-severity flag(s) need attention"
+    },
+    {
+      "filename": "doc6_soc2_summary.txt",
+      "doc_type": "soc2_report",
+      "classification_confidence": "high",
+      "extracted_fields": {
+        "error": "Extraction failed \u2014 malformed response"
+      },
+      "risk_flags": [
+        {
+          "field": "organization_name",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "audit_period_start",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "audit_period_end",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "trust_service_criteria",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "auditor_name",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "opinion_type",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "exceptions_noted",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        }
+      ],
+      "flag_count": {
+        "high": 0,
+        "medium": 7,
+        "low": 0
+      },
+      "routing_decision": "HUMAN_REVIEW",
+      "routing_queue": "vendor_ops_team",
+      "routing_reason": "7 medium-severity flag(s) need attention"
+    },
+    {
+      "filename": "doc7_ambiguous.txt",
+      "doc_type": "vendor_contract",
+      "classification_confidence": "medium",
+      "extracted_fields": {
+        "error": "Extraction failed \u2014 malformed response"
+      },
+      "risk_flags": [
+        {
+          "field": "party_a",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "party_b",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "effective_date",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "term_length",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "governing_law",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "liability_cap",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "termination_clause",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        },
+        {
+          "field": "payment_terms",
+          "issue": "Required field missing",
+          "severity": "Medium",
+          "type": "rule",
+          "recommendation": "Request this information from vendor"
+        }
+      ],
+      "flag_count": {
+        "high": 0,
+        "medium": 8,
+        "low": 0
+      },
+      "routing_decision": "HUMAN_REVIEW",
+      "routing_queue": "vendor_ops_team",
+      "routing_reason": "8 medium-severity flag(s) need attention"
+    }
+  ]
+}
